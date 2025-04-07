@@ -3,7 +3,7 @@ import Favorites from "../../pages/favorites/favorites";
 import Login from "../../pages/login/login";
 import Offer from "../../pages/offer/offer";
 import { PrivateRoute } from "../private-route/private-route";
-import Error from "../../pages/error-page/error";
+import Error from "../../pages/error-page/error-page";
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import { AppRoute } from "../../const";
 import { AuthorizationStatus } from "../../const";
