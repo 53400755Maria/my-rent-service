@@ -2,7 +2,7 @@ import { JSX } from 'react';
 import { FullOffer } from '../../types/offer';
 import { Logo } from '../../components/logo/logo';
 import { useParams } from 'react-router-dom';
-import PageNotFound from '../page-not-found/page-not-found';
+import Error from '../error-page/error-page';
 import ReviewForm from '../../components/review-form/review-form';
 
 type OfferProps = {
@@ -13,7 +13,7 @@ function Offer({ offers }: OfferProps): JSX.Element {
     const params = useParams();
     const offer = offers.find((item) => item.id === params.id);
     if (!offer){
-        return <PageNotFound/>;
+        return <Error/>;
     }
     return (
     <div className ="page page--gray page--main">
