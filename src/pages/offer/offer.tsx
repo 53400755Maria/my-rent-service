@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Logo } from '../../components/logo/logo';
-import Error from "../../pages/error-page/error";
+import Error from "../error-page/error-page";
 import ReviewForm from '../../components/review-form/review-form';
 import ReviewsList from '../../components/review-list/review-list';
 import { FullOffer, OffersList } from '../../types/offer';
