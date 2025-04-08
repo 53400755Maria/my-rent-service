@@ -64,7 +64,7 @@ function Offer({ offers }: OfferProps): JSX.Element {
   const addReview = (reviewText: string, rating: number) => {
     const newReview = {
       id: String(reviewsState.length + 1),
-      user: { name: 'Гость', avatarUrl: '/img/default-avatar.jpg', isPro: false },
+      user: { name: 'Гость', avatarUrl: '/img/default-avatar.png', isPro: false },
       rating,
       comment: reviewText,
       date: new Date().toISOString(),
